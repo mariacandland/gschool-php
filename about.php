@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Adding the Page Title from the index, about, or contact pages -->
-    <title>About | Maria-Candland</title>
-
-    <!-- Tell the browser to render the view width correctly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Link our stylesheet -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-
-  <body id="about">
-    <header>
-      <div class="row clearfix">
-        <a href="index.html"><img class="logo" src="images/logo.png"/></a>
-
-        <!-- Our Site Navigation -->
-        <nav>
-        	<a href="index.html">Home</a>
-        	<a href="about.html">About</a>
-        	<a href="contact.html">Contact</a>
-        </nav>
-
-      </div>
-    </header>
-
-    <!-- Font -->
-          <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<?php include 'header.php'; ?>
 
     <div class="row clearfix">
 
@@ -69,17 +38,4 @@
       </div>
     </div>
 
-    <footer>
-      <!-- Our Site Navigation -->
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <!-- Site Copyright -->
-    	<p>Copyright 2015 - Maria Candland</p>
-    </footer>
-
-  </body>
-</html>
+<?php include 'footer.php'; ?>

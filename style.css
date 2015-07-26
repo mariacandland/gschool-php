@@ -1,183 +1,64 @@
-* { box-sizing: border-box; }
+/*
+Error: Invalid CSS after "@mixin ": expected identifier, was ".clearfix {"
+        on line 2 of /Users/MariaCandland/Documents/www/gschool-php/sass/_mixins.scss
+        from line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/style.scss
 
-/* Clearfix */
-.clearfix {
-  *zoom: 1;
-}
+1: /* Clearfix *\/
+2: @mixin .clearfix {
+3:   *zoom: 1;
+4: }
+5: 
+6: &:before,
+7: &:after {
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-
-
-
-/* Columns & Row */
-.row {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto 20px;
-}
-
-.column {
-    border-right: 2px solid #444;
-  float: left;
-  margin-right: 2%;
-}
-
-.column.two-third {
-  width: 65%;
-}
-.column.one-half {
-  width: 49%;
-}
-.column.one-third {
-  width: 32%
-}
-
-.column:last-of-type {
-  margin-right: 0;
-    border-right: 0;
-}
-
-
-
-
-
-/* ----- Styles Here ----- */
-body {
-  padding: 0;
-  margin: 0;
-  font-family:'Bree Serif', serif;
-}
-
-a {
-  transition: 333ms all ease-in-out;
-}
-
-a:hover {
-  color: #fff;
-}
-
-
-
-/* Header */
-header {
-  background: #3f3f3f;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-/* Cancel the header margin on home page. */
-body#home header {
-  margin-bottom: 0;
-}
-
-header .row {
-  margin-bottom: 0;
-}
-
-.logo {
-  float: left;
-  width: 120px;
-  height: 120px;
-}
-
-nav {
-  margin-top: 40px;
-}
-
-header nav {
-  float: right;
-  text-align: right;
-}
-
-nav a {
-  margin-right: 20px;
-  font-size: 30px;
-  color: #000;
-  text-decoration: none;
-}
-
-nav a:last-of-type {
-  margin: 0;
-}
-
-
-
-/* Hero */
-.hero {
-  background: #000;
-  background-image: url(images/glasses.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.hero h1 {
-  margin: 0;
-  padding: 120px 0;
-  color: white;
-  text-shadow: 0 0 10px #444;
-  text-align: center;
-  font-size: 45px;
-}
-
-
-
-
-/* Google Map */
-iframe {
-  max-width: 100%;
-}
-
-
-
-/* Footer */
-footer {
-  background: #3f3f3f;
-  margin-top: 60px;
-  padding: 5px 0;
-  font-size: 20px;
-  text-align: center;
-}
-
-
-
-/* Responsive */
-@media (max-width: 500px) {
-  header {
-    text-align: center;
-  }
-
-  .logo {
-    float: none;
-  }
-
-  header nav {
-    float: none;
-    text-align: center;
-  }
-
-  .column {
-    width: 100% !important;
-    margin-right: 0;
-  }
-}
-
-p { 
-    font-size: 20px;
-    font-family: 'Indie Flower', cursive;
-}
-
-h3 { 
-    font-size: 30px;
-font-family:'Bree Serif', serif;
-} 
-
+Backtrace:
+/Users/MariaCandland/Documents/www/gschool-php/sass/_mixins.scss:2
+/Users/MariaCandland/Documents/www/gschool-php/sass/style.scss:6
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1096:in `tok!'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:228:in `mixin_directive'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:219:in `special_directive'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:194:in `directive'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:660:in `block_child'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:42:in `parse'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:393:in `_to_tree'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:299:in `to_tree'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:407:in `run'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@mixin \": expected identifier, was \".clearfix {\"\A         on line 2 of /Users/MariaCandland/Documents/www/gschool-php/sass/_mixins.scss\A         from line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/style.scss\A \A 1: /* Clearfix */\A 2: @mixin .clearfix {\A 3:   *zoom: 1;\A 4: }\A 5: \A 6: &:before,\A 7: &:after {"; }
