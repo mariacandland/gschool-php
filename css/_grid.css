@@ -1,36 +1,39 @@
 /*
-Error: Invalid CSS after "@mixin ": expected identifier, was ".clearfix {"
-        on line 2 of /Users/MariaCandland/Documents/www/gschool-php/sass/_mixins.scss
-        from line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/style.scss
+Error: Undefined mixin 'clearfix'.
+        on line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/_grid.scss, in `clearfix'
+        from line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/_grid.scss
 
-1: /* Clearfix *\/
-2: @mixin .clearfix {
-3:   *zoom: 1;
-4: }
-5: 
-6: &:before,
-7: &:after {
+1: /* Columns & Row *\/
+2: .row {
+3:   width: 90%;
+4:   max-width: 800px;
+5:   margin: 0 auto 20px;
+6:     @include clearfix;
+7:         }
+8: 
+9: .column {
+10:     $gutter:2%;
+11:     border-right: 2px solid #444;
 
 Backtrace:
-/Users/MariaCandland/Documents/www/gschool-php/sass/_mixins.scss:2
-/Users/MariaCandland/Documents/www/gschool-php/sass/style.scss:6
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1165:in `expected'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1101:in `expected'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1096:in `tok!'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:228:in `mixin_directive'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:219:in `special_directive'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:194:in `directive'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:660:in `block_child'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:650:in `block_contents'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:42:in `parse'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:393:in `_to_tree'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:299:in `to_tree'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
+/Users/MariaCandland/Documents/www/gschool-php/sass/_grid.scss:6:in `clearfix'
+/Users/MariaCandland/Documents/www/gschool-php/sass/_grid.scss:6
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
-/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `with_mixin'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
 /Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/MariaCandland/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
@@ -61,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@mixin \": expected identifier, was \".clearfix {\"\A         on line 2 of /Users/MariaCandland/Documents/www/gschool-php/sass/_mixins.scss\A         from line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/style.scss\A \A 1: /* Clearfix */\A 2: @mixin .clearfix {\A 3:   *zoom: 1;\A 4: }\A 5: \A 6: &:before,\A 7: &:after {"; }
+  content: "Error: Undefined mixin 'clearfix'.\A         on line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/_grid.scss, in `clearfix'\A         from line 6 of /Users/MariaCandland/Documents/www/gschool-php/sass/_grid.scss\A \A 1: /* Columns & Row */\A 2: .row {\A 3:   width: 90%;\A 4:   max-width: 800px;\A 5:   margin: 0 auto 20px;\A 6:     @include clearfix;\A 7:         }\A 8: \A 9: .column {\A 10:     $gutter:2%;\A 11:     border-right: 2px solid #444;"; }

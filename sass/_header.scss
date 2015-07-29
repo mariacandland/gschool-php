@@ -3,15 +3,16 @@ header {
   background: #3f3f3f;
   padding: 10px;
   margin-bottom: 20px;
-}
 
-@include breakpoint($phone) {
+
+  @include breakpoint($phone) {
     text-align: center;
   }
 
-/* Cancel the header margin on home page. */
-body#home & {
-  margin-bottom: 0;
+    /* Cancel the header margin on home page. */
+    body#home & {
+      margin-bottom: 0;
+    }
 }
 
 header .row {
@@ -23,7 +24,7 @@ header .row {
   width: 120px;
   height: 120px;
 
-      @include breakpoint($phone) {
+  @include breakpoint($phone) {
     float: none;
     width: 80px;
   }
