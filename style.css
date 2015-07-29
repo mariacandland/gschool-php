@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box; }
+
+/* Clearfix */
+/* Columns & Row */
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.column {
+  border-right: 2px solid #444;
+  float: left;
+  margin-right: 2%; }
+  .column.two-third {
+    width: 65.6666666667%; }
+  .column.one-half {
+    width: 49%; }
+  .column.one-third {
+    width: 32.3333333333%; }
+  .column p {
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Indie Flower', cursive; }
+  .column h3 {
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Bree Serif', serif; }
+  .column:last-of-type {
+    margin-right: 0;
+    border-right: 0px; }
+  @media (max-width: 400px) {
+    .column {
+      width: 100% !important;
+      margin-right: 0; } }
+
+a {
+  -webkit-transition: 333ms all ease-in-out;
+          transition: 333ms all ease-in-out; }
+  a:hover {
+    color: #fff; }
+
+/* Header */
+header {
+  background: #3f3f3f;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* Cancel the header margin on home page. */ }
+  @media (max-width: 400px) {
+    header {
+      text-align: center; } }
+  body#home header {
+    margin-bottom: 0; }
+
+header .row {
+  margin-bottom: 0; }
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 120px; }
+  @media (max-width: 400px) {
+    .logo {
+      float: none;
+      width: 80px; } }
+
+nav {
+  margin-top: 40px; }
+  header nav {
+    float: right;
+    text-align: right; }
+  @media (max-width: 400px) {
+    nav {
+      float: none;
+      text-align: center; } }
+
+a {
+  margin-right: 20px;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none; }
+  a:last-of-type {
+    margin: 0; }
+
+/* Hero */
+.hero {
+  background: #000;
+  background-image: url(img/glasses.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.hero h1 {
+  margin: 0;
+  padding: 120px 0;
+  color: white;
+  text-shadow: 0 0 10px #444;
+  text-align: center;
+  font-size: 45px; }
+
+/* Google Map */
+iframe {
+  max-width: 100%; }
+
+/* Footer */
+footer {
+  background: #3f3f3f;
+  margin-top: 60px;
+  padding: 5px 0;
+  font-size: 20px;
+  text-align: center; }
+
+/* ----- Styles Here ----- */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bree Serif', serif; }
+
+/*# sourceMappingURL=style.css.map */
